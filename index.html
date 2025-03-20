@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRON ToDoList</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="user-select">
+      <h2 class="user-select__title">
+        Выберите пользователя
+      </h2>
+
+      <ul class="user-select__list">
+        
+      </ul>
+
+      <button class="btn user-select__add-btn">
+        Добавить пользователя
+      </button>
+    </section>
+
+    
+    <div class="app">
+      <header class="top-panel">
+        <div class="top-panel__user-info">
+          <span class="top-panel__label">Пользователь:</span>
+          <span class="top-panel__name neon"></span>
+        </div>
+
+        <div class="top-panel__actions">
+          <button class="btn top-panel__menu-btn--switch">
+            Сменить
+          </button>
+
+          <button class="btn top-panel__menu-btn--delete">
+            Удалить
+          </button>
+        </div>
+      </header>
+
+      
+      <div class="modal-overlay">
+        <div class="todo-add">
+
+          <input
+            type="text"
+            class="todo-add__input"
+            placeholder="Введите описание задачи"
+          />
+          
+          <div class="todo-add__row">
+            <div class="todo-add__status">
+              <button class="btn todo-add__status-btn todo-add__status-btn--important">
+                ВАЖНО
+              </button>
+
+              <button class="btn todo-add__status-btn todo-add__status-btn--normal active">
+                ОБЫЧНО
+              </button>
+            </div>
+
+            <div class="todo-add__deadline-container">
+              <label for="deadline" class="todo-add__deadline-label">Дедлайн</label>
+              <input type="date" id="deadline" class="todo-add__deadline" />
+              <small class="todo-add__deadline-warning"></small>
+            </div>
+          </div>
+
+          <button class="btn todo-add__submit">
+            Добавить задачу
+          </button>
+        </div>
+      </div>
+
+
+      <section class="todo-list-container">
+        <section class="todo-list">
+          
+        </section>
+      </section>
+
+  
+      <button class="btn todo-add-toggle blinking glitch" style="display: none;">
+        +
+      </button>
+    </div>
+  </body>
+</html>
