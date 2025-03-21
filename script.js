@@ -173,7 +173,7 @@ class TaskManager {
         <span class="todo-list__deadline">Дедлайн: ${deadlineDisplay}${remainingSpan}</span>
         <div class="todo-list__actions">
           <button class="btn todo-list__edit-btn" data-index="${index}">Редактировать</button>
-          <button class="btn todo-list__delete-btn" data-index="${index}">Удалить</button>
+          <button class="btn todo-list__delete-btn" data-index="${index}">Стереть</button>
           <button class="btn todo-list__complete-btn" data-index="${index}">${task.completed ? 'Восстановить' : 'Выполнить'}</button>
         </div>
       `;
@@ -221,7 +221,7 @@ class TaskManager {
   }
   handleDeleteTask(e) {
     const index = parseInt(e.target.getAttribute('data-index'));
-    return confirm('Вы действительно хотите удалить эту задачу?')
+    return confirm('Вы действительно хотите стереть эту задачу?')
       ? (this.tasks.splice(index, 1), this.storageManager.saveTasks(this.username, this.tasks), this.renderTasks())
       : null;
   }

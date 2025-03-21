@@ -202,10 +202,13 @@ section, div, button {
 
 .todo-add__deadline-warning {
   color: var(--color-error);
+  height: 1rem;
   font-size: 0.9rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  
+  
 }
 
 .error {
@@ -277,6 +280,7 @@ section, div, button {
   margin-bottom: 0.5rem;
 }
 .todo-list__text {
+  word-wrap: break-word;
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
 }
@@ -395,7 +399,7 @@ section, div, button {
 }
 
 .todo-filter-btn {
-  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 
 .todo-filter-btn:hover {
@@ -406,8 +410,8 @@ section, div, button {
 
 .todo-filter-btn:active {
   background: var(--color-accent-active);
-  transform: translateY(5px) scale(0.95);
-  box-shadow: 0px 1px 3px rgba(0, 217, 255, 0.7), 0 0 12px rgba(255, 0, 100, 0.8) inset;
+  transform: translateY(5px) scale(0.98);
+  box-shadow: 0px 1px 3px rgba(0, 217, 255, 0.7), 0 0 12px rgba(195, 0, 255, 0.8) inset;
 }
 
 @media (min-width: 312px) {:root{font-size: 8px;}}
