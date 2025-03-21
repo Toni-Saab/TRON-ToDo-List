@@ -183,6 +183,7 @@ section, div, button {
 }
 
 .todo-add__deadline-container {
+  max-width: 7rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -202,7 +203,9 @@ section, div, button {
 .todo-add__deadline-warning {
   color: var(--color-error);
   font-size: 0.9rem;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .error {

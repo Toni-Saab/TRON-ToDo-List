@@ -3,7 +3,7 @@ function getFilterBtnHTML(taskManager) {
             ${taskManager.tasks.filter(t => !t.completed).length}
           </div>
           <div class="filter-info" style="display:inline-block;">
-            (активные), отфильтровать по дедлайну ▶️
+            : АКТИВНЫЕ (сlick to filter by deadline)
           </div>`;
 }
 
